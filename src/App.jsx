@@ -1,10 +1,13 @@
 import "./App.css";
 
+import ButtonGradient from "./assets/svg/ButtonGradient"
+import Header from "./components/Header";
+
 function App() {
   return (
     <>
-
-      <h1>Hello</h1>
+      <Header/>
+      <ButtonGradient />
     </>
   );
 }
