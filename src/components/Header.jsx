@@ -43,7 +43,7 @@ function Header() {
 
 
 
-                    <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
+                    <div className="relative z-2 flex flex-col items-center justify-center  m-auto lg:flex-row">
 
                         {navigation.map((item) => (
                             <a onClick={handleClick} key={item.id} href={item.url} className={`block realtive font-code text-2xl uppercase text-n-1 

@@ -68,6 +68,7 @@
 
 .-rotate-180 {
   @apply rotate-[-180deg];
+
 }
 
 .-rotate-225 {

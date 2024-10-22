@@ -93,7 +93,7 @@ function Hero() {
           <BackgroundCircles parallaxRef={parallaxRef}/>
         </div>
       </div>
-      <CompanyLogos/>
+      <CompanyLogos className="hidden lg:block "/>
     </Section>
   );
 }
