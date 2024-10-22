@@ -6,7 +6,7 @@ import { GradientLight } from "../design/Benefits"
 function Benefits() {
 
     return (
-        <Section id="benefits">
+        <Section crosess  id="benefits">
             <div className='container relative z-2'>
 
                 <Heading title="Chat Smarter, Not Harder with Brainwave" />

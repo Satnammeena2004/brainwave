@@ -16,9 +16,9 @@ function Hero() {
   return (
     <Section
       crosess
-      customPaddings
+      customPaddings="lg:translate-y-[5.25rem]"
       id="hero"
-      crossesOffset="lg:translate-y-[5.25rem]"
+      crossesOffset="lg:translate-y-[3.25rem]"
       className="pt-[12rem] -mt-[5.25rem] "
     >
       <div className="container relative " ref={parallaxRef}>
