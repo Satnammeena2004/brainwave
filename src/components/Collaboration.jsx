@@ -6,8 +6,8 @@ import {LeftCurve, RightCurve} from "../design/Collaboration"
 function Collaboration() {
     return (
         <Section crosess>
-            <div className='lg:flex justify-between gap-x-10 container'>
-                <div className='max-w-[25rem] flex flex-col items-start'>
+            <div className='lg:flex  container'>
+                <div className='max-w-[25rem] flex flex-1 flex-col items-start'>
                     <h2 className='h2 mb-4 text-left'>AI Chat App for seamless collaboration</h2>
                     <ul>
                         {collabContent.map((collab, index) => (
@@ -22,9 +22,9 @@ function Collaboration() {
                     </ul>
                     <Button className="mt-4">TRY IT NOW</Button>
                 </div>
-                <div className='flex flex-col relative mt-8'>
-                    <p className='body-2 text-left md:mb-10 w-[30rem] text-n-3 mt-4'>{collabText}</p>
-                    <div className='m-auto  flex w-[22rem] scale-75 md:scale-100 aspect-square rounded-full  border border-n-6'>
+                <div className='ml-auto flex flex-col items-center  relative mt-8 lg:w-1/2 md:w-full'>
+                    <p className='body-2 text-left w-full md:w-[25rem] md:mb-10  text-n-3 '>{collabText}</p>
+                    <div className='flex  md:ml-4 w-[25rem] scale-75 md:scale-100 aspect-square rounded-full  border border-n-6'>
                         <div className='w-60 m-auto  flex md:scale-100 aspect-square rounded-full  border border-n-6'>
                             <div className='w-[6rem] p-2 m-auto rounded-full aspect-square bg-conic-gradient'>
                                 <div className='w-full flex justify-center items-center h-full bg-n-8 rounded-full  '>
@@ -35,7 +35,7 @@ function Collaboration() {
 
                         <ul className=''>{collabApps.map((app, i) => {
                             return <li className={`absolute   top-0 origin-bottom -ml-6 h-1/2   left-1/2 rotate-${i * 45}`} key={app.id}>
-                                <div className={`relative -top-[1.6rem]  flex w-[3.25rem] h-[3.25rem] border border-n-1/15 rounded-xl bg-n-7  -rotate-${i * 45}`} >
+                                <div className={`relative -top-[1.6rem]  flex w-[3.25rem] h-[3.25rem] border border-n-1/15 hover:border-n-2/40 rounded-xl bg-n-7  -rotate-${i * 45}`} >
                                     <img src={app.icon} className='m-auto' width={app.width} height={app.height} key={app.id} />
 
                                 </div>

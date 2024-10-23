@@ -39,11 +39,11 @@ function Header() {
                 <a className="block w-[12rem] xl:mr-8" href="#hero">
                     <img src={brainwave} width={190} height={40} alt="brainwave" />
                 </a>
-                <nav className={`${openNavigation ? "flex" : "hidden"} w-full  fixed top-[5rem] left-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}>
+                <nav className={`${openNavigation ? "flex" : "hidden"} w-full   fixed top-[5rem] left-0 bottom-0  lg:static lg:flex lg:mx-auto lg:bg-transparent`}>
 
 
 
-                    <div className="relative z-2 flex flex-col items-center justify-center  m-auto lg:flex-row">
+                    <div className="relative  z-2 flex flex-col items-center justify-center  m-auto lg:flex-row">
 
                         {navigation.map((item) => (
                             <a onClick={handleClick} key={item.id} href={item.url} className={`block realtive font-code text-2xl uppercase text-n-1 

@@ -14,7 +14,7 @@ function Benefits() {
                     {benefits.map((item) => (
                         <div key={item.id} style={{
                             backgroundImage: `url(${item.backgroundUrl})`
-                        }} className='relative group   block min-h-[18rem] border border-n-2/10  flex-1 bg-no-repeat bg-[length:100%_100%] max-w-[25rem]  min-w-[22rem]  p-10 rounded-xl  '>
+                        }} className='relative group   block min-h-[18rem] border border-transparent   flex-1 bg-no-repeat bg-[length:100%_100%] max-w-[25rem]  min-w-[22rem]  p-10 rounded-2xl  '>
                             <div className='relative z-2 flex flex-col'>
                                 <h2 className='h5 mb-6 '>{item.title}</h2>
 
