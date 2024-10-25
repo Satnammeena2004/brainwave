@@ -2,10 +2,10 @@ import { smallSphere, stars } from "../assets"
 import Heading from "./Heading"
 import PricingList from "./PricingList"
 import Section from "./Section"
-
+import { LeftLine, RightLine } from "../design/Pricing"
 const Pricing = () => {
     return (
-        <Section className="overflow-hidden">
+        <Section className="overflow-hidden" >
             <div className="container hidden md:block relative z-2 mb-20">
                 <div className="hidden md:flex justify-center ">
                     <img src={smallSphere} className="relative z-2" width={255} height={255} />
@@ -17,9 +17,16 @@ const Pricing = () => {
             </div>
 
             <Heading title="Pay once, use forever" tag="Get started with Brainwave" />
-            <div className="relative">
+            <div className="relative container" id="pricing">
 
                 <PricingList />
+                <LeftLine />
+                <RightLine />
+
+            </div>
+            <div className="mt-6 flex justify-center">
+                <a href="#pricing" className="border-b tracking-wider uppercase font-code font-bold text-sm">see all details</a>
+
             </div>
         </Section>
     )

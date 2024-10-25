@@ -63,9 +63,9 @@ function Hero() {
 
 
                 <ScrollParallax isAbsolutelyPositioned>
-                  <ul className="hidden md:flex  absolute -left-[2.5rem] bottom-[7.5rem]  p-1 bg-n-4/40 backdrop-blur-sm border rounded-md xl:flex border-n-1/10">
+                  <ul className="hidden md:flex  absolute -left-[2.5rem] bottom-[7.5rem] rounded-2xl  p-1 bg-n-4/40 backdrop-blur-sm border  xl:flex border-n-1/10">
                     {heroIcons.map((icon, index) => {
-                      return <li key={index} className="p-2">
+                      return <li key={index} className="p-4">
                         <img src={icon} width={24} height={25} alt={icon} />
                       </li>
                     })}

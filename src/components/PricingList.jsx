@@ -4,9 +4,9 @@ import Button from "./Button"
 
 const PricingList = () => {
     return (
-        <div className="flex flex:wrap justify-center mx-auto w-[85vw] max-lg:flex-wrap gap-4 p-2  ">
+        <div className="flex   mx-auto   max-lg:flex-wrap gap-4 p-2  ">
             {pricing.map((item) => {
-                return <div key={item.id} className="border   px-6 py-8 border-n-6 rounded-2xl  h-full min-h-[25rem] even:py-14 odd:py-8 odd:my-4 [&>h4]:first:text-color-2 [&>h4]:even:text-color-1 [&>h4]:last:text-color-3">
+                return <div key={item.id} className="border px-6 w-full  py-8 border-n-6 rounded-2xl  h-full min-h-[25rem] even:py-14 odd:py-8 odd:my-4 [&>h4]:first:text-color-2 [&>h4]:even:text-color-1 [&>h4]:last:text-color-3">
                     <h4 className="h4 text-left mb-3 [&>h4]:text-color-1">{item.title}</h4>
                     <p className="body-2 h-20 text-left">{item.description}</p>
                     <div className="flex items-center justify-start h-[5.5rem]"> {item.price && (
@@ -17,7 +17,7 @@ const PricingList = () => {
                         </>
                     )}
                     </div>
-                    <Button href={item.price ? "/pricing" : "mailto:contact@jsmastery.pro"}
+                    <Button href={item.price ? "/pricing" : "mailto:stnam.meena2005@gmail.com"}
                         white={!!item.price} className="my-10 w-full">
                         {item.price ? "Get started" : "Contact us"}
                     </Button>
