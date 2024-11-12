@@ -34,6 +34,7 @@ import {
     telegram,
     twitter,
     yourlogo,
+
   } from "../assets";
   
   export const navigation = [
@@ -324,5 +325,5 @@ import {
       title: "Facebook",
       iconUrl: facebook,
       url: "#",
-    },
+    }
   ];
