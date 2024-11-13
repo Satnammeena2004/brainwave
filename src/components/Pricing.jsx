@@ -5,8 +5,8 @@ import Section from "./Section"
 import { LeftLine, RightLine } from "../design/Pricing"
 const Pricing = () => {
     return (
-        <Section className="overflow-hidden" >
-            <div className="container hidden md:block relative z-2 mb-20">
+        <Section className="overflow-hidden " >
+            <div className="hidden md:block relative z-2 mb-20">
                 <div className="hidden md:flex justify-center ">
                     <img src={smallSphere} className="relative z-2" width={255} height={255} />
                 </div>
@@ -17,7 +17,7 @@ const Pricing = () => {
             </div>
 
             <Heading title="Pay once, use forever" tag="Get started with Brainwave" />
-            <div className="relative container" id="pricing">
+            <div className="relative sm:container" id="pricing">
 
                 <PricingList />
                 <LeftLine />
