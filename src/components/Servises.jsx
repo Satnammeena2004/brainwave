@@ -7,8 +7,8 @@ import { PhotoChatMessage, VideoBar, VideoChatMessage } from "../design/Services
 
 const Servises = () => {
     return (
-        <Section id="how-to-use">
-            <div className="container">
+        <Section id="how-to-use" >
+            <div className="sm:container">
                 <Heading title="Generative AI made for creators." text="Brainwave unlocks the potential of AI-powered applications" />
                 <div className="relative ">
                     <div className="relative z-1 flex h-[42rem] border border-n-6 rounded-3xl  overflow-hidden py-24 px-15 mb-4 ">
@@ -29,9 +29,9 @@ const Servises = () => {
                                 ))}
                             </ul>
                         </div>
-                        <Generating className="absolute border border-n-6  bottom-20 z-2 left-4 right-4 md:left-1/2 md:-translate-x-1/2" />
+                        <Generating className="absolute border border-n-6  bottom-20 z-2 left-4 right-4 md:left-1/2 md:-translate-x-1/2 translate-y-10" />
                     </div>
-                    <div className="relative z-1 gap-4 grid lg:grid-cols-2">
+                    <div className="relative z-1 gap-4 grid lg:grid-cols-2 ">
                         <div className="relative min-h-[39rem] border border-n-1/10 rounded-2xl overflow-hidden">
                             <div className="absolute opacity-80 inset-0">
                                 <img src={service2} className="w-full h-full object-cover" width={630} height={750} alt="robot" />

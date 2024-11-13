@@ -23,7 +23,7 @@ function Hero() {
     >
       <div className="container relative " ref={parallaxRef}>
         <div className="z-1 mx-auto max-w-[62rem] mb-[3.25rem] md:mb-20 lg:mb-[6.25rem] ">
-          <h1 className="h1 mb-6">
+          <h1 className="h1 mb-6 ">
             {" "}
             Explore the Possibilities of&nbsp;AI&nbsp;Chatting with {` `}
             <span className=" h1 inline-block relative">
@@ -37,7 +37,7 @@ function Hero() {
               />
             </span>
           </h1>
-          <p className="body-1 mb-8 text-n-2">
+          <p className="body-1 mb-8 text-n-2 ">
             Unleash the power of AI within Brainwave. Upgrade your productivity
             with Brainwave, the open AI chat app
           </p>

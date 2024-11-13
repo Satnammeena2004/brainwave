@@ -9,7 +9,7 @@ const Roadmap = () => {
     return (
         <Section className="" id="roadmap">
             <Heading tag="Ready to get started" className="mb-20" title="What we’re working on" />
-            <div className="container pb-10 ">
+            <div className="sm:container pb-10 ">
 
                 <div className="relative grid md:grid-cols-2  gap-4">
                     {roadmap.map((item) => (
@@ -17,7 +17,7 @@ const Roadmap = () => {
                             <div className="absolute top-0 left-0 w-full h-full">
                                 <img src={grid} alt="grid" />
                             </div>
-                            <div className="relative flex items-center justify-between px-8">
+                            <div className="relative flex items-center justify-between gap-x-4  sm:px-8">
                                 <Tagline>{item.date}</Tagline>
                                 <div className="bg-white p-0 px-3  rounded-sm  flex items-center">
                                     <img src={item.status === "done" ? check2 : loading1} alt="check" />
@@ -28,7 +28,7 @@ const Roadmap = () => {
                                 <img src={item.imageUrl} className="w-full" alt={item.text} />
                             </div>
                             <div className="flex my-2 flex-col justify-start items-start">
-                                <h4 className="h4 my-2">{item.title}</h4>
+                                <h4 className="h4 my-2 text-left">{item.title}</h4>
                                 <p className="body-2 text-left text-n-4">{item.text}</p>
                             </div>
                         </div>
